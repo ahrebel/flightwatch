@@ -8,7 +8,7 @@ It scrapes Google Flights for real-time price updates and notifies you when a go
 
 ## Features
 - 📌 **Easy-to-use GUI**: Add flights manually or set criteria for automatic tracking.
-- ✈ **Automated Web Scraping**: Uses Selenium to fetch flight prices from Google Flights.
+- ✈ **Automated Web Scraping**: Uses BeautifulSoup and Requests to fetch flight prices from Google Flights.
 - 📉 **Email Alerts**: Get notified when the price drops below your specified maximum.
 - 🕒 **Daily Price Check**: Runs every day at 8:00 AM automatically.
 - 🗄 **CSV Storage**: Keeps track of all flight entries in a local CSV file.
@@ -18,16 +18,20 @@ It scrapes Google Flights for real-time price updates and notifies you when a go
 ### Prerequisites
 Ensure you have Python installed on your machine. Then install the required dependencies:
 ```bash
-pip install selenium beautifulsoup4 requests schedule smtplib pandas
+pip install beautifulsoup4 requests schedule smtplib pandas
 ```
-You'll also need **ChromeDriver** for Selenium. Download it from [here](https://sites.google.com/chromium.org/driver/) and place it in your system PATH.
 
 ## How to Use
-1. **Run the application**:
+1. **Clone the GitHub repository**:
+   ```bash
+   git clone https://github.com/yourusername/flightwatch.git
+   cd flightwatch
+   ```
+2. **Run the application**:
    ```bash
    python flightwatch.py
    ```
-2. **Enter flight details or search criteria**:
+3. **Enter flight details or search criteria**:
    - Origin (e.g., ATL for Atlanta)
    - Destination (e.g., LAX for Los Angeles)
    - Date (format: YYYY-MM-DD)
@@ -35,14 +39,18 @@ You'll also need **ChromeDriver** for Selenium. Download it from [here](https://
    - Preferred Airline (optional)
    - Allow Connections? (Yes/No)
    - Email to receive alerts
-3. **Click "Add Flight"**: Saves flight details to `flights.csv`.
-4. **Click "Start Tracking"**: Begins automatic price checks.
-5. If the flight price drops below your max price, you’ll receive an email alert!
+4. **Click "Add Flight"**: Saves flight details to `flights.csv`.
+5. **Click "Start Tracking"**: Begins automatic price checks.
+6. If the flight price drops below your max price, you’ll receive an email alert!
 
 ## Email Configuration
 FlightWatch uses Gmail to send alerts. To use it:
 - Enable **Less Secure Apps** or generate an **App Password** for your Gmail account.
 - Replace `your_email@gmail.com` and `your_email_password` in the script with your credentials.
+
+## Repository
+You can find the source code and contribute to FlightWatch on GitHub:
+🔗 **GitHub Repository:** [https://github.com/yourusername/flightwatch](https://github.com/yourusername/flightwatch)
 
 ## Future Enhancements
 🚀 Web-based UI (Flask) for remote tracking
