@@ -24,12 +24,12 @@ pip install beautifulsoup4 requests schedule smtplib pandas
 ## How to Use
 1. **Clone the GitHub repository**:
    ```bash
-   git clone https://github.com/yourusername/flightwatch.git
-   cd flightwatch
+   git clone https://github.com/ahrebel/pricepilot.git
+   cd pricepilot
    ```
 2. **Run the application**:
    ```bash
-   python flightwatch.py
+   python pricepilot.py
    ```
 3. **Enter flight details or search criteria**:
    - Origin (e.g., ATL for Atlanta)
@@ -44,13 +44,13 @@ pip install beautifulsoup4 requests schedule smtplib pandas
 6. If the flight price drops below your max price, you’ll receive an email alert!
 
 ## Email Configuration
-FlightWatch uses Gmail to send alerts. To use it:
+PricePilot uses Gmail to send alerts. To use it:
 - Enable **Less Secure Apps** or generate an **App Password** for your Gmail account.
 - Replace `your_email@gmail.com` and `your_email_password` in the script with your credentials.
 
 ## Repository
-You can find the source code and contribute to FlightWatch on GitHub:
-🔗 **GitHub Repository:** [https://github.com/yourusername/flightwatch](https://github.com/yourusername/flightwatch)
+You can find the source code and contribute to PricePilot on GitHub:
+🔗 **GitHub Repository:** [https://github.com/yourusername/flightwatch](https://github.com/yourusername/pricepilot)
 
 ## Future Enhancements
 🚀 Web-based UI (Flask) for remote tracking
