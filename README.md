@@ -1,6 +1,6 @@
-# FlightWatch
+# PricePilot
 
-FlightWatch is a simple and effective Python application that helps you track flight prices and receive email alerts when the prices drop below your set threshold. This tool allows you to either:
+PricePilot is a simple and effective Python application that helps you track flight prices and receive email alerts when the prices drop below your set threshold. This tool allows you to either:
 - Input specific flight details (airline, flight number, connections, etc.) for tracking, **or**
 - Define broad search criteria (preferred airlines, max connections, price limit) to automatically track the best flights.
 
